@@ -183,7 +183,8 @@ The **STATION** table is described as in [Weather Observation Station 1](#Weathe
 **SOLUTION**
 
 ~~~~
-SELECT COUNT(city) - COUNT(DISTINCT(city)) AS duplicatecount FROM station;
+SELECT COUNT(city) - COUNT(DISTINCT(city)) 
+AS duplicatecount FROM station;
 ~~~~
 
 <hr>
@@ -198,13 +199,15 @@ The **STATION** table is described as in [Weather Observation Station 1](#Weathe
 **SOLUTION**
 
 ~~~~
-SELECT city , LENGTH(city) FROM (SELECT city FROM station ORDER BY LENGTH(city) ASC) 
+SELECT city , LENGTH(city) FROM (SELECT city FROM station 
+ORDER BY LENGTH(city) ASC) 
 AS subtable
 WHERE LENGTH(city)=(SELECT MIN(LENGTH(city)) FROM station) 
 ORDER BY city ASC 
 LIMIT 1;
 
-SELECT city , LENGTH(city) FROM (SELECT city FROM station ORDER BY LENGTH(city) DESC) 
+SELECT city , LENGTH(city) FROM (SELECT city FROM station 
+ORDER BY LENGTH(city) DESC) 
 AS subtable
 WHERE LENGTH(city)=(SELECT MAX(LENGTH(city)) FROM station) 
 ORDER BY city ASC 
@@ -429,7 +432,8 @@ The **Employee** table containing employee data for a company is described as in
 **SOLUTION**
 
 ~~~~
-SELECT name FROM employee WHERE salary>2000 and months<10 ORDER BY employee_id ASC;
+SELECT name FROM employee WHERE salary>2000 and months<10 
+ORDER BY employee_id ASC;
 ~~~~
 
 <hr>
