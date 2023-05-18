@@ -4,7 +4,7 @@
 
 ## BASIC SELECT
 
-1. [Revising the Select Query I](###Revising-the-Select-Query-I)
+1. [Revising the Select Query I](#Revising-the-Select-Query-I)
 1. [Revising the Select Query II](###Revising-the-Select-Query-II)
 1. [Select All](###Select-All)
 1. [Select By ID](###Select-By-ID)
