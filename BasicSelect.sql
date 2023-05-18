@@ -40,4 +40,8 @@ order by CITY asc
 limit 1;
 
 -- 11. Weather Observation Station 6: Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
-Select CITY from STATION where CITY LIKE 'A%' or CITY LIKE 'E%' or CITY LIKE 'I%' or CITY LIKE 'O%' or CITY LIKE 'U%';
+Select CITY from STATION where CITY LIKE 'A%' 
+or CITY LIKE 'E%' 
+or CITY LIKE 'I%' 
+or CITY LIKE 'O%' 
+or CITY LIKE 'U%';
