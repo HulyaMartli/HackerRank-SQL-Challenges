@@ -5,16 +5,16 @@
 ## BASIC SELECT
 
 1. [Revising the Select Query I](#Revising-the-Select-Query-I)
-1. [Revising the Select Query II](###Revising-the-Select-Query-II)
-1. [Select All](###Select-All)
-1. [Select By ID](###Select-By-ID)
-1. [Japanese Cities' Attributes](###Japanese-Cities-Attributes)
-1. [Japanese Cities' Names](###Japanese-Cities-Names)
-1. [Weather Observation Station 1](###Weather-Observation-Station-1)
-1. [Weather Observation Station 3](###Weather-Observation-Station-3)
-1. [Weather Observation Station 4](###Weather-Observation-Station-4)
-1. [Weather Observation Station 5](Weather-Observation-Station-5)
-1. [Weather Observation Station 6](###Weather-Observation-Station-6)
+1. [Revising the Select Query II](#Revising-the-Select-Query-II)
+1. [Select All](#Select-All)
+1. [Select By ID](#Select-By-ID)
+1. [Japanese Cities' Attributes](#Japanese-Cities-Attributes)
+1. [Japanese Cities' Names](#Japanese-Cities-Names)
+1. [Weather Observation Station 1](#Weather-Observation-Station-1)
+1. [Weather Observation Station 3](#Weather-Observation-Station-3)
+1. [Weather Observation Station 4](#Weather-Observation-Station-4)
+1. [Weather Observation Station 5](#Weather-Observation-Station-5)
+1. [Weather Observation Station 6](#Weather-Observation-Station-6)
 
 ### Revising the Select Query I
 
