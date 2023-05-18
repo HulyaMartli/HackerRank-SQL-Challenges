@@ -155,9 +155,17 @@ The **STATION** table is described as in [Weather Observation Station 1](###Weat
 **SOLUTION**
 
 ~~~~
-Select CITY , LENGTH(CITY) from (Select CITY from STATION order by LENGTH(CITY) asc) as SUBTABLE where LENGTH(CITY)=(Select MIN(LENGTH(CITY)) from STATION) order by CITY asc limit 1;
+Select CITY , LENGTH(CITY) from (Select CITY from STATION order by LENGTH(CITY) asc) 
+as SUBTABLE 
+where LENGTH(CITY)=(Select MIN(LENGTH(CITY)) from STATION) 
+order by CITY asc 
+limit 1;
 
-Select CITY , LENGTH(CITY) from (Select CITY from STATION order by LENGTH(CITY) desc) as SUBTABLE where LENGTH(CITY)=(Select MAX(LENGTH(CITY)) from STATION) order by CITY asc limit 1;
+Select CITY , LENGTH(CITY) from (Select CITY from STATION order by LENGTH(CITY) desc) 
+as SUBTABLE 
+where LENGTH(CITY)=(Select MAX(LENGTH(CITY)) from STATION) 
+order by CITY asc 
+limit 1;
 ~~~~
 
 ### Weather Observation Station 6
