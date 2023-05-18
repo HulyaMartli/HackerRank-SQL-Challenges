@@ -10,7 +10,7 @@
 
 ## BASIC SELECT
 
-1. [Revising the Select Query I](#1.-Revising-the-Select-Query-I)
+1. [Revising the Select Query I](#Revising-the-Select-Query-I)
 1. [Revising the Select Query II](#Revising-the-Select-Query-II)
 1. [Select All](#Select-All)
 1. [Select By ID](#Select-By-ID)
@@ -33,7 +33,7 @@
 
 <hr>
 
-### 1. Revising the Select Query I
+### Revising the Select Query I
 
 [HackerRank Page](https://www.hackerrank.com/challenges/revising-the-select-query/)
 
@@ -57,7 +57,7 @@ SELECT * FROM city WHERE countrycode='USA' and population>100000;
 
 <hr>
 
-### 2. Revising the Select Query II
+### Revising the Select Query II
 
 [HackerRank Page](https://www.hackerrank.com/challenges/revising-the-select-query-2/)
 
@@ -73,7 +73,7 @@ SELECT name FROM city WHERE countrycode='USA' and population>120000;
 
 <hr>
 
-### 3. Select All
+### Select All
 
 [HackerRank Page](https://www.hackerrank.com/challenges/select-all-sql/)
 
@@ -89,7 +89,7 @@ SELECT * FROM city;
 
 <hr>
 
-### 4. Select By ID
+### Select By ID
 
 [HackerRank Page](https://www.hackerrank.com/challenges/select-by-id/)
 
@@ -105,7 +105,7 @@ SELECT * FROM city WHERE id=1661;
 
 <hr>
 
-### 5. Japanese Cities Attributes
+### Japanese Cities Attributes
 
 [HackerRank Page](https://www.hackerrank.com/challenges/japanese-cities-attributes/)
 
@@ -121,7 +121,7 @@ SELECT * FROM city WHERE countrycode='JPN';
 
 <hr>
 
-### 6. Japanese Cities' Names
+### Japanese Cities' Names
 
 [HackerRank Page](https://www.hackerrank.com/challenges/japanese-cities-name/)
 
@@ -138,7 +138,7 @@ SELECT name FROM city WHERE countrycode='JPN';
 
 <hr>
 
-### 7. Weather Observation Station 1
+### Weather Observation Station 1
 
 [HackerRank Page](https://www.hackerrank.com/challenges/weather-observation-station-1/)
 
@@ -163,7 +163,7 @@ SELECT city , STATE FROM station;
 
 <hr>
 
-### 8. Weather Observation Station 3
+### Weather Observation Station 3
 
 [HackerRank Page](https://www.hackerrank.com/challenges/weather-observation-station-3/)
 
@@ -179,7 +179,7 @@ SELECT DISTINCT(city) FROM station WHERE MOD(id,2)=0;
 
 <hr>
 
-### 9. Weather Observation Station 4
+### Weather Observation Station 4
 
 [HackerRank Page](https://www.hackerrank.com/challenges/weather-observation-station-4/)
 
@@ -196,7 +196,7 @@ AS duplicatecount FROM station;
 
 <hr>
 
-### 10. Weather Observation Station 5
+### Weather Observation Station 5
 
 [HackerRank Page](https://www.hackerrank.com/challenges/weather-observation-station-5/)
 
@@ -224,7 +224,7 @@ LIMIT 1;
 
 <hr>
 
-### 11. Weather Observation Station 6
+### Weather Observation Station 6
 
 [HackerRank Page](https://www.hackerrank.com/challenges/weather-observation-station-6/)
 
@@ -244,7 +244,7 @@ or city LIKE 'U%';
 
 <hr>
 
-### 12. Weather Observation Station 7
+### Weather Observation Station 7
 
 [HackerRank Page](https://www.hackerrank.com/challenges/weather-observation-station-7/)
 
@@ -264,7 +264,7 @@ or city LIKE '%u';
 
 <hr>
 
-### 13. Weather Observation Station 8
+### Weather Observation Station 8
 
 [HackerRank Page](https://www.hackerrank.com/challenges/weather-observation-station-8/)
 
@@ -312,7 +312,7 @@ or city LIKE 'U%u';
 
 <hr>
 
-### 14. Weather Observation Station 9
+### Weather Observation Station 9
 
 [HackerRank Page](https://www.hackerrank.com/challenges/weather-observation-station-9/)
 
@@ -329,7 +329,7 @@ WHERE (SUBSTR(city, 1, 1)) NOT IN ('A', 'E', 'I', 'O', 'U');
 
 <hr>
 
-### 15. Weather Observation Station 10
+### Weather Observation Station 10
 
 [HackerRank Page](https://www.hackerrank.com/challenges/weather-observation-station-10/)
 
@@ -346,7 +346,7 @@ WHERE (SUBSTR(city, -1)) NOT IN ('a', 'e', 'i', 'o', 'u');
 
 <hr>
 
-### 16. Weather Observation Station 11
+### Weather Observation Station 11
 
 [HackerRank Page](https://www.hackerrank.com/challenges/weather-observation-station-11/)
 
@@ -364,7 +364,7 @@ OR (SUBSTR(city, -1)) NOT IN ('a', 'e', 'i', 'o', 'u');
 
 <hr>
 
-### 17. Weather Observation Station 12
+### Weather Observation Station 12
 
 [HackerRank Page](https://www.hackerrank.com/challenges/weather-observation-station-12/)
 
@@ -382,7 +382,7 @@ AND (SUBSTR(city, -1)) NOT IN ('a', 'e', 'i', 'o', 'u');
 
 <hr>
 
-### 18. Higher Than 75 Marks
+### Higher Than 75 Marks
 
 [HackerRank Page](https://www.hackerrank.com/challenges/more-than-75-marks/)
 
@@ -407,7 +407,7 @@ ORDER BY SUBSTR(name,LENGTH(Name)-2,3),id ASC;
 
 <hr>
 
-### 19. Employee Names
+### Employee Names
 
 [HackerRank Page](https://www.hackerrank.com/challenges/name-of-employees/)
 
@@ -430,7 +430,7 @@ where *employee_id* is an employee's ID number, *name* is their name, *months* i
 SELECT name FROM employee ORDER BY name; 
 ~~~~
 
-### 20. Employee Salaries
+### Employee Salaries
 
 [HackerRank Page](https://www.hackerrank.com/challenges/salary-of-employees/)
 
