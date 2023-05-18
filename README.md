@@ -177,6 +177,10 @@ The **STATION** table is described as in [Weather Observation Station 1](###Weat
 **SOLUTION**
 
 ~~~~
-Select CITY from STATION where CITY LIKE 'A%' or CITY LIKE 'E%' or CITY LIKE 'I%' or CITY LIKE 'O%' or CITY LIKE 'U%';
+Select CITY from STATION where CITY LIKE 'A%' 
+or CITY LIKE 'E%' 
+or CITY LIKE 'I%' 
+or CITY LIKE 'O%' 
+or CITY LIKE 'U%';
 ~~~~
 
