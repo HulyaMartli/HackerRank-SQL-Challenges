@@ -27,9 +27,17 @@ Select DISTINCT(CITY) from STATION where MOD(ID,2)=0;
 Select COUNT(CITY) - COUNT(DISTINCT(CITY)) as DUPLICATECOUNT from STATION;
 
 -- 10. Weather Observation Station 5: Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
-Select CITY , LENGTH(CITY) from (Select CITY from STATION order by LENGTH(CITY) asc) as SUBTABLE where LENGTH(CITY)=(Select MIN(LENGTH(CITY)) from STATION) order by CITY asc limit 1;
+Select CITY , LENGTH(CITY) from (Select CITY from STATION order by LENGTH(CITY) asc) 
+as SUBTABLE 
+where LENGTH(CITY)=(Select MIN(LENGTH(CITY)) from STATION) 
+order by CITY asc 
+limit 1;
 
-Select CITY , LENGTH(CITY) from (Select CITY from STATION order by LENGTH(CITY) desc) as SUBTABLE where LENGTH(CITY)=(Select MAX(LENGTH(CITY)) from STATION) order by CITY asc limit 1;
+Select CITY , LENGTH(CITY) from (Select CITY from STATION order by LENGTH(CITY) desc) 
+as SUBTABLE 
+where LENGTH(CITY)=(Select MAX(LENGTH(CITY)) from STATION) 
+order by CITY asc 
+limit 1;
 
 -- 11. Weather Observation Station 6: Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
 Select CITY from STATION where CITY LIKE 'A%' or CITY LIKE 'E%' or CITY LIKE 'I%' or CITY LIKE 'O%' or CITY LIKE 'U%';
