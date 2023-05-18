@@ -39,7 +39,7 @@ The **CITY** table is described as follows:
 **SOLUTION**
 
 ~~~~
-Select * from CITY where COUNTRYCODE='USA' and POPULATION>100000;
+SELECT * FROM city WHERE countrycode='USA' and population>100000;
 ~~~~
 
 <hr>
@@ -55,7 +55,7 @@ The **CITY** table is described as in [Revising the Select Query I](###Revising-
 **SOLUTION**
 
 ~~~~
-Select NAME from CITY where COUNTRYCODE='USA' and POPULATION>120000;
+SELECT name FROM city WHERE countrycode='USA' and population>120000;
 ~~~~
 
 <hr>
@@ -69,7 +69,7 @@ The **CITY** table is described as in [Revising the Select Query I](###Revising-
 **SOLUTION**
 
 ~~~~
-Select * from CITY;
+SELECT * FROM city;
 ~~~~
 
 <hr>
@@ -83,7 +83,7 @@ The **CITY** table is described as in [Revising the Select Query I](###Revising-
 **SOLUTION**
 
 ~~~~
-Select * from CITY where ID=1661;
+SELECT * FROM city WHERE id=1661;
 ~~~~
 
 <hr>
@@ -97,7 +97,7 @@ The **CITY** table is described as in [Revising the Select Query I](###Revising-
 **SOLUTION**
 
 ~~~~
-Select * from CITY where COUNTRYCODE='JPN';
+SELECT * FROM city WHERE countrycode='JPN';
 ~~~~
 
 <hr>
@@ -112,7 +112,7 @@ The **CITY** table is described as in [Revising the Select Query I](###Revising-
 **SOLUTION**
 
 ~~~~
-Select NAME from CITY where COUNTRYCODE='JPN';
+SELECT name FROM city WHERE countrycode='JPN';
 ~~~~
 
 <hr>
@@ -135,7 +135,7 @@ where **LAT_N** is the northern latitude and **LONG_W** is the western longitude
 **SOLUTION**
 
 ~~~~
-Select CITY , STATE from STATION;
+SELECT city , STATE FROM station;
 ~~~~
 
 <hr>
@@ -149,7 +149,7 @@ The **STATION** table is described as in [Weather Observation Station 1](###Weat
 **SOLUTION**
 
 ~~~~
-Select DISTINCT(CITY) from STATION where MOD(ID,2)=0;
+SELECT DISTINCT(city) FROM station WHERE MOD(id,2)=0;
 ~~~~
 
 <hr>
@@ -163,7 +163,7 @@ The **STATION** table is described as in [Weather Observation Station 1](###Weat
 **SOLUTION**
 
 ~~~~
-Select COUNT(CITY) - COUNT(DISTINCT(CITY)) as DUPLICATECOUNT from STATION;
+SELECT COUNT(city) - COUNT(DISTINCT(city)) AS duplicatecount FROM station;
 ~~~~
 
 <hr>
@@ -177,17 +177,17 @@ The **STATION** table is described as in [Weather Observation Station 1](###Weat
 **SOLUTION**
 
 ~~~~
-Select CITY , LENGTH(CITY) from (Select CITY from STATION order by LENGTH(CITY) asc) 
-as SUBTABLE 
-where LENGTH(CITY)=(Select MIN(LENGTH(CITY)) from STATION) 
-order by CITY asc 
-limit 1;
+SELECT city , LENGTH(city) FROM (SELECT city FROM station ORDER BY LENGTH(city) ASC) 
+AS subtable
+WHERE LENGTH(city)=(SELECT MIN(LENGTH(city)) FROM station) 
+ORDER BY city ASC 
+LIMIT 1;
 
-Select CITY , LENGTH(CITY) from (Select CITY from STATION order by LENGTH(CITY) desc) 
-as SUBTABLE 
-where LENGTH(CITY)=(Select MAX(LENGTH(CITY)) from STATION) 
-order by CITY asc 
-limit 1;
+SELECT city , LENGTH(city) FROM (SELECT city FROM station ORDER BY LENGTH(city) DESC) 
+AS subtable
+WHERE LENGTH(city)=(SELECT MAX(LENGTH(city)) FROM station) 
+ORDER BY city ASC 
+LIMIT 1;
 ~~~~
 
 <hr>
@@ -201,10 +201,10 @@ The **STATION** table is described as in [Weather Observation Station 1](###Weat
 **SOLUTION**
 
 ~~~~
-Select CITY from STATION where CITY LIKE 'A%' 
-or CITY LIKE 'E%' 
-or CITY LIKE 'I%' 
-or CITY LIKE 'O%' 
-or CITY LIKE 'U%';
+SELECT city FROM station WHERE city LIKE 'A%' 
+or city LIKE 'E%' 
+or city LIKE 'I%' 
+or city LIKE 'O%' 
+or city LIKE 'U%';
 ~~~~
 
