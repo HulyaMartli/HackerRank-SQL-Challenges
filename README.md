@@ -2,6 +2,8 @@
 
 [BASIC SELECT](#BASIC-SELECT)
 
+<hr>
+
 ## BASIC SELECT
 
 1. [Revising the Select Query I](#Revising-the-Select-Query-I)
@@ -15,6 +17,8 @@
 1. [Weather Observation Station 4](#Weather-Observation-Station-4)
 1. [Weather Observation Station 5](#Weather-Observation-Station-5)
 1. [Weather Observation Station 6](#Weather-Observation-Station-6)
+
+<hr>
 
 ### Revising the Select Query I
 
@@ -38,6 +42,8 @@ The **CITY** table is described as follows:
 Select * from CITY where COUNTRYCODE='USA' and POPULATION>100000;
 ~~~~
 
+<hr>
+
 ### Revising the Select Query II
 
 [HackerRank Page](https://www.hackerrank.com/challenges/revising-the-select-query-2/)
@@ -52,6 +58,8 @@ The **CITY** table is described as in [Revising the Select Query I](###Revising-
 Select NAME from CITY where COUNTRYCODE='USA' and POPULATION>120000;
 ~~~~
 
+<hr>
+
 ### Select All
 
 Query all columns (attributes) for every row in the **CITY** table.
@@ -63,6 +71,8 @@ The **CITY** table is described as in [Revising the Select Query I](###Revising-
 ~~~~
 Select * from CITY;
 ~~~~
+
+<hr>
 
 ### Select By ID
 
@@ -76,6 +86,8 @@ The **CITY** table is described as in [Revising the Select Query I](###Revising-
 Select * from CITY where ID=1661;
 ~~~~
 
+<hr>
+
 ### Japanese Cities Attributes
 
 Query all attributes of every Japanese city in the **CITY** table. The **COUNTRYCODE** for Japan is `JPN`.
@@ -87,6 +99,8 @@ The **CITY** table is described as in [Revising the Select Query I](###Revising-
 ~~~~
 Select * from CITY where COUNTRYCODE='JPN';
 ~~~~
+
+<hr>
 
 ### Japanese Cities' Names
 
@@ -100,6 +114,8 @@ The **CITY** table is described as in [Revising the Select Query I](###Revising-
 ~~~~
 Select NAME from CITY where COUNTRYCODE='JPN';
 ~~~~
+
+<hr>
 
 ### Weather Observation Station 1
 
@@ -122,6 +138,8 @@ where **LAT_N** is the northern latitude and **LONG_W** is the western longitude
 Select CITY , STATE from STATION;
 ~~~~
 
+<hr>
+
 ### Weather Observation Station 3
 
 Query a list of **CITY** names from **STATION** for cities that have an even **ID** number. Print the results in any order, but exclude duplicates from the answer.
@@ -134,6 +152,8 @@ The **STATION** table is described as in [Weather Observation Station 1](###Weat
 Select DISTINCT(CITY) from STATION where MOD(ID,2)=0;
 ~~~~
 
+<hr>
+
 ### Weather Observation Station 4 
 
 Find the difference between the total number of **CITY** entries in the table and the number of distinct **CITY** entries in the table.
@@ -145,6 +165,8 @@ The **STATION** table is described as in [Weather Observation Station 1](###Weat
 ~~~~
 Select COUNT(CITY) - COUNT(DISTINCT(CITY)) as DUPLICATECOUNT from STATION;
 ~~~~
+
+<hr>
 
 ### Weather Observation Station 5
 
@@ -167,6 +189,8 @@ where LENGTH(CITY)=(Select MAX(LENGTH(CITY)) from STATION)
 order by CITY asc 
 limit 1;
 ~~~~
+
+<hr>
 
 ### Weather Observation Station 6
 
