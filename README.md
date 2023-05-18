@@ -10,7 +10,7 @@
 
 ## BASIC SELECT
 
-1. [Revising the Select Query I](#Revising-the-Select-Query-I)
+1. [Revising the Select Query I](#1.-Revising-the-Select-Query-I)
 1. [Revising the Select Query II](#Revising-the-Select-Query-II)
 1. [Select All](#Select-All)
 1. [Select By ID](#Select-By-ID)
@@ -72,6 +72,7 @@ SELECT name FROM city WHERE countrycode='USA' and population>120000;
 ~~~~
 
 <hr>
+
 ### 3. Select All
 
 [HackerRank Page](https://www.hackerrank.com/challenges/select-all-sql/)
@@ -87,6 +88,7 @@ SELECT * FROM city;
 ~~~~
 
 <hr>
+
 ### 4. Select By ID
 
 [HackerRank Page](https://www.hackerrank.com/challenges/select-by-id/)
@@ -102,6 +104,7 @@ SELECT * FROM city WHERE id=1661;
 ~~~~
 
 <hr>
+
 ### 5. Japanese Cities Attributes
 
 [HackerRank Page](https://www.hackerrank.com/challenges/japanese-cities-attributes/)
@@ -117,6 +120,7 @@ SELECT * FROM city WHERE countrycode='JPN';
 ~~~~
 
 <hr>
+
 ### 6. Japanese Cities' Names
 
 [HackerRank Page](https://www.hackerrank.com/challenges/japanese-cities-name/)
@@ -133,6 +137,7 @@ SELECT name FROM city WHERE countrycode='JPN';
 ~~~~
 
 <hr>
+
 ### 7. Weather Observation Station 1
 
 [HackerRank Page](https://www.hackerrank.com/challenges/weather-observation-station-1/)
@@ -157,6 +162,7 @@ SELECT city , STATE FROM station;
 ~~~~
 
 <hr>
+
 ### 8. Weather Observation Station 3
 
 [HackerRank Page](https://www.hackerrank.com/challenges/weather-observation-station-3/)
@@ -172,6 +178,7 @@ SELECT DISTINCT(city) FROM station WHERE MOD(id,2)=0;
 ~~~~
 
 <hr>
+
 ### 9. Weather Observation Station 4
 
 [HackerRank Page](https://www.hackerrank.com/challenges/weather-observation-station-4/)
@@ -188,6 +195,7 @@ AS duplicatecount FROM station;
 ~~~~
 
 <hr>
+
 ### 10. Weather Observation Station 5
 
 [HackerRank Page](https://www.hackerrank.com/challenges/weather-observation-station-5/)
@@ -215,6 +223,7 @@ LIMIT 1;
 ~~~~
 
 <hr>
+
 ### 11. Weather Observation Station 6
 
 [HackerRank Page](https://www.hackerrank.com/challenges/weather-observation-station-6/)
